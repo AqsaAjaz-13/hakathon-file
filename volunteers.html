@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volunteers - Saylani Campus Portal</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+
+<body>
+
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Saylani_Welfare_International_Trust_Logo.jpg"
+                    alt="Saylani Logo" class="sidebar-logo">
+            </div>
+
+            <nav class="sidebar-nav">
+                <a href="dashboard.html" class="nav-item">
+                    <i class="fas fa-th-large"></i>
+                    <span>Dashboard</span>
+                </a>
+                <a href="lost-found.html" class="nav-item">
+                    <i class="fas fa-box-open"></i>
+                    <span>Lost & Found</span>
+                </a>
+                <a href="complaints.html" class="nav-item">
+                    <i class="fas fa-file-alt"></i>
+                    <span>Complaints</span>
+                </a>
+                <a href="volunteers.html" class="nav-item active">
+                    <i class="fas fa-hand-holding-heart"></i>
+                    <span>Volunteers</span>
+                </a>
+                <a href="notifications.html" class="nav-item">
+                    <i class="fas fa-bell"></i>
+                    <span>Notifications</span>
+                </a>
+                <a href="index.html" class="nav-item">
+                    <i class="fas fa-sign-out-alt"></i>
+                    <span>Go Back to Login</span>
+                </a>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="content-header" style="display: flex; align-items: center; gap: 10px;">
+                <div style="background: #e8f5e9; padding: 8px; border-radius: 6px; color: #2e7d32;">
+                    <i class="fas fa-file-invoice"></i>
+                </div>
+                <h2 style="margin: 0; font-size: 1.5rem;">Admin Dashboard</h2>
+            </header>
+
+            <!-- Stats Grid -->
+            <div class="stats-grid">
+                <!-- Total Users -->
+                <div class="stat-card">
+                    <div class="stat-icon green">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="stat-info">
+                        <p>Total Users</p>
+                        <h3>540</h3>
+                    </div>
+                </div>
+
+                <!-- Open Complaints -->
+                <div class="stat-card">
+                    <div class="stat-icon red" style="background: #ffebee; color: #e57373;">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="stat-info">
+                        <p>Open Complaints</p>
+                        <h3>12</h3>
+                    </div>
+                </div>
+
+                <!-- Lost Items Pending -->
+                <div class="stat-card">
+                    <div class="stat-icon green">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <div class="stat-info">
+                        <p>Lost Items Pending</p>
+                        <h3>6</h3>
+                    </div>
+                </div>
+
+                <!-- Active Volunteers -->
+                <div class="stat-card">
+                    <div class="stat-icon green">
+                        <i class="fas fa-user-friends"></i>
+                    </div>
+                    <div class="stat-info">
+                        <p>Active Volunteers</p>
+                        <h3>24</h3>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Complaints Management Table -->
+            <div class="activity-section">
+                <h3>Complaints Management</h3>
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Item</th>
+                                <th>Category</th>
+                                <th>Location</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>506</td>
+                                <td>Data Mining</td>
+                                <td>Complaints</td>
+                                <td><button class="status-btn green">Resolved</button></td>
+                                <!-- Button in Location col based on image layout oddity or just simplified col merging? Image shows button at right. Assuming Action col -->
+                            </tr>
+                            <tr>
+                                <td>502</td>
+                                <td>Mock Nphone</td>
+                                <td>Donation</td>
+                                <td><button class="status-btn yellow">In Progress</button></td>
+                            </tr>
+                            <tr>
+                                <td>505</td>
+                                <td>Web Fundly</td>
+                                <td>Panic</td>
+                                <td><button class="status-btn blue">Recovered</button></td>
+                            </tr>
+                            <tr>
+                                <td>508</td>
+                                <td>New Leads</td>
+                                <td>Lost & Found</td>
+                                <td><button class="status-btn green">Active</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>

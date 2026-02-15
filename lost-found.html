@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lost & Found - Saylani Campus Portal</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+
+<body>
+
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Saylani_Welfare_International_Trust_Logo.jpg"
+                    alt="Saylani Logo" class="sidebar-logo">
+            </div>
+
+            <nav class="sidebar-nav">
+                <a href="dashboard.html" class="nav-item">
+                    <i class="fas fa-th-large"></i>
+                    <span>Dashboard</span>
+                </a>
+                <a href="lost-found.html" class="nav-item active">
+                    <i class="fas fa-box-open"></i>
+                    <span>Lost & Found</span>
+                </a>
+                <a href="complaints.html" class="nav-item">
+                    <i class="fas fa-file-alt"></i>
+                    <span>Complaints</span>
+                </a>
+                <a href="volunteers.html" class="nav-item">
+                    <i class="fas fa-hand-holding-heart"></i>
+                    <span>Volunteers</span>
+                </a>
+                <a href="notifications.html" class="nav-item">
+                    <i class="fas fa-bell"></i>
+                    <span>Notifications</span>
+                </a>
+                <a href="index.html" class="nav-item">
+                    <i class="fas fa-sign-out-alt"></i>
+                    <span>Go Back to Login</span>
+                </a>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="form-container">
+                <div class="form-header">
+                    <i class="fas fa-file-signature"></i>
+                    <h3>Submit Complaint</h3>
+                </div>
+
+                <div class="complaint-form-card">
+                    <form id="complaintForm">
+                        <div class="form-input-group">
+                            <label>Complaint Title</label>
+                            <input type="text" class="custom-input" id="complaintTitle" placeholder="Enter title">
+                        </div>
+
+                        <div class="form-input-group">
+                            <label>Category</label>
+                            <select class="custom-select" id="complaintCategory">
+                                <option value="">Select Category</option>
+                                <option value="Lost Item">Lost Item</option>
+                                <option value="Found Item">Found Item</option>
+                                <option value="Security">Security</option>
+                                <option value="General">General</option>
+                            </select>
+                        </div>
+
+                        <div class="form-input-group">
+                            <label>Description</label>
+                            <textarea class="custom-textarea" id="complaintDescription" rows="4"
+                                placeholder="Description"></textarea>
+                        </div>
+
+                        <div class="form-input-group">
+                            <label>Location</label>
+                            <select class="custom-select" id="complaintLocation">
+                                <option value="">Select Location</option>
+                                <option value="Block A">Block A</option>
+                                <option value="Block B">Block B</option>
+                                <option value="Cafeteria">Cafeteria</option>
+                                <option value="Library">Library</option>
+                                <option value="City Park">City Park</option>
+                                <option value="Dha Neant">Dha Neant</option>
+                            </select>
+                        </div>
+
+                        <div class="urgency-label">
+                            <i class="fas fa-calendar-alt" style="color: #4caf50;"></i>
+                            <span>Urgency</span>
+                        </div>
+                        <div class="urgency-section">
+                            <div class="urgency-options">
+                                <label class="urgency-option">
+                                    <span class="dot low"></span>
+                                    <span>Low</span>
+                                    <input type="radio" name="urgency" value="low" style="display: none;">
+                                </label>
+                                <label class="urgency-option">
+                                    <span class="dot medium"
+                                        style="background-color: #eee; border: 1px solid #ddd;"></span>
+                                    <span>Medium</span>
+                                    <input type="radio" name="urgency" value="medium" style="display: none;">
+                                </label>
+                                <label class="urgency-option">
+                                    <span class="dot high"></span>
+                                    <span>High</span>
+                                    <input type="radio" name="urgency" value="high" style="display: none;">
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="submit-btn-container">
+                            <button type="button" class="btn-submit-complaint" id="submitComplaintBtn">Submit
+                                Complaint</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="my-complaints-section">
+                <div class="section-title-row">
+                    <h3>My Complaints</h3>
+                    <div class="filters-info">
+                        Status: <span>All</span> | Category: <span>All</span>
+                    </div>
+                </div>
+
+                <div class="complaints-table-container">
+                    <table class="complaints-table">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Complaints</th>
+                                <th>Location</th>
+                                <th>Status</th>
+                                <th style="text-align: right;">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="font-weight: 600;">503</td>
+                                <td style="font-weight: 500;">Wi-Fi Not Working</td>
+                                <td>
+                                    <div class="location-cell">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        <span>Dha Neant</span>
+                                    </div>
+                                </td>
+                                <td><span class="status-badge pendincy">Pendincy</span></td>
+                                <td class="actions-cell">...</td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: 600;">504</td>
+                                <td style="font-weight: 500;">Leaky Pipe</td>
+                                <td>
+                                    <div class="location-cell">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        <span>City Park</span>
+                                    </div>
+                                </td>
+                                <td><span class="status-badge resolved">Resolved</span></td>
+                                <td class="actions-cell">...</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        // Urgency selector logic
+        const urgencyOptions = document.querySelectorAll('.urgency-option');
+        urgencyOptions.forEach(option => {
+            option.addEventListener('click', function () {
+                // Reset all dots to their default colors (or muted if needed)
+                // In the image, unselected dots are muted.
+                // But for simplicity, we'll just handle the radio selection.
+                urgencyOptions.forEach(opt => {
+                    const dot = opt.querySelector('.dot');
+                    if (opt === this) {
+                        dot.style.opacity = '1';
+                        dot.style.boxShadow = '0 0 0 2px rgba(0,0,0,0.1)';
+                    } else {
+                        dot.style.opacity = '0.6';
+                        dot.style.boxShadow = 'none';
+                    }
+                });
+                this.querySelector('input').checked = true;
+            });
+        });
+
+        // Submit Button Logic with Validation
+        const submitBtn = document.getElementById('submitComplaintBtn');
+        if (submitBtn) {
+            submitBtn.addEventListener('click', function () {
+                const title = document.getElementById('complaintTitle').value;
+                const category = document.getElementById('complaintCategory').value;
+                const description = document.getElementById('complaintDescription').value;
+                const location = document.getElementById('complaintLocation').value;
+                const urgency = document.querySelector('input[name="urgency"]:checked');
+
+                if (!title || !category || !description || !location || !urgency) {
+                    alert('Please fill all the fields');
+                    return;
+                }
+
+                alert('Your complaint is submitted');
+                document.getElementById('complaintForm').reset();
+                // Reset dots
+                urgencyOptions.forEach(opt => {
+                    opt.querySelector('.dot').style.opacity = '1';
+                    opt.querySelector('.dot').style.boxShadow = 'none';
+                });
+            });
+        }
+    </script>
+</body>
+
+</html>

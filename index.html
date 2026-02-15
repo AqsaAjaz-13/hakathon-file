@@ -1,12 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> website</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saylani Campus Portal</title>
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-     <h1> hello </h1>
+
+  <div class="main-container">
+    <!-- Left Section -->
+    <div class="left-section">
+      <div class="green-wave"></div>
+      <!-- Saylani Welfare International Trust Logo -->
+      <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Saylani_Welfare_International_Trust_Logo.jpg"
+        alt="Saylani Welfare International Trust" class="logo-img"
+        onerror="this.outerHTML='<h1 style=\'color:#4CAF50; font-family:cursive;\'>Saylani Welfare</h1>'">
+
+      <h1>Campus Portal</h1>
+      <p>Manage reports, complaints <br>& events in one place.</p>
+    </div>
+
+    <!-- Right Section -->
+    <div class="right-section">
+      <a href="#" class="back-btn" onclick="history.back()">
+        <i class="fas fa-arrow-left"></i>
+      </a>
+      <div class="login-card">
+        <div class="login-header">
+          <h2>Login</h2>
+        </div>
+
+        <form>
+          <div class="form-group">
+            <label>Email</label>
+            <input type="email" class="form-control" placeholder="Enter your email">
+          </div>
+
+          <div class="form-group">
+            <label>Password</label>
+            <input type="password" class="form-control" placeholder="Enter your password">
+          </div>
+
+          <div class="role-toggle">
+            <button type="button" class="role-btn active">Student</button>
+            <button type="button" class="role-btn">Admin</button>
+          </div>
+
+          <button type="submit" class="btn-primary">Log In</button>
+
+          <div class="separator">
+            <span>or continue with</span>
+          </div>
+
+          <button type="button" class="google-btn">
+            <img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg" alt="Google Logo">
+            Sign in with Google
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
+
 </html>

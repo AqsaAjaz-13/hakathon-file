@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notifications - Saylani Campus Portal</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+
+<body>
+
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Saylani_Welfare_International_Trust_Logo.jpg"
+                    alt="Saylani Logo" class="sidebar-logo">
+            </div>
+
+            <nav class="sidebar-nav">
+                <a href="dashboard.html" class="nav-item">
+                    <i class="fas fa-th-large"></i>
+                    <span>Dashboard</span>
+                </a>
+                <a href="lost-found.html" class="nav-item">
+                    <i class="fas fa-box-open"></i>
+                    <span>Lost & Found</span>
+                </a>
+                <a href="complaints.html" class="nav-item">
+                    <i class="fas fa-file-alt"></i>
+                    <span>Complaints</span>
+                </a>
+                <a href="volunteers.html" class="nav-item">
+                    <i class="fas fa-hand-holding-heart"></i>
+                    <span>Volunteers</span>
+                </a>
+                <a href="notifications.html" class="nav-item active">
+                    <i class="fas fa-bell"></i>
+                    <span>Notifications</span>
+                </a>
+                <a href="index.html" class="nav-item">
+                    <i class="fas fa-sign-out-alt"></i>
+                    <span>Go Back to Login</span>
+                </a>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div
+                style="max-width: 600px; margin: 0 auto; background: #fff; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); overflow: hidden;">
+                <div class="notif-header">
+                    <h3><i class="fas fa-comment-alt"></i> Notifications</h3>
+                    <i class="fas fa-check-double" style="color: #bbb; cursor: pointer;"></i>
+                </div>
+                <ul class="notif-list">
+                    <li class="notif-item">
+                        <div class="notif-icon" style="background-color: #d35400;">
+                            <i class="fas fa-user-shield"></i>
+                        </div>
+                        <div class="notif-content">
+                            <div class="notif-title">Complaint Marked as Resolved</div>
+                            <p class="notif-subtitle">21153309</p>
+                        </div>
+                        <span class="notif-time">44m</span>
+                    </li>
+                    <li class="notif-item">
+                        <div class="notif-icon" style="background-color: #3f51b5;">
+                            <i class="fas fa-laptop"></i>
+                        </div>
+                        <div class="notif-content">
+                            <div class="notif-title">Laptop Found: Matches with Your Report!</div>
+                            <p class="notif-subtitle">53584b + 090839</p>
+                        </div>
+                        <span class="notif-time">41m</span>
+                    </li>
+                    <li class="notif-item">
+                        <div class="notif-icon" style="background-color: #27ae60;">
+                            <i class="fas fa-calendar-check"></i>
+                        </div>
+                        <div class="notif-content">
+                            <div class="notif-title">Reminder: Event Tomorrow</div>
+                            <p class="notif-subtitle">21158239</p>
+                        </div>
+                        <span class="notif-time">40m</span>
+                    </li>
+                    <li class="notif-item">
+                        <div class="notif-icon" style="background-color: #2980b9;">
+                            <i class="fas fa-user-clock"></i>
+                        </div>
+                        <div class="notif-content">
+                            <div class="notif-title">Staff Request!</div>
+                            <p class="notif-subtitle">223795</p>
+                        </div>
+                        <span class="notif-time">30m</span>
+                    </li>
+                </ul>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>

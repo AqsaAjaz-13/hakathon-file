@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complaints - Saylani Campus Portal</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+
+<body>
+
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Saylani_Welfare_International_Trust_Logo.jpg"
+                    alt="Saylani Logo" class="sidebar-logo">
+            </div>
+
+            <nav class="sidebar-nav">
+                <a href="dashboard.html" class="nav-item">
+                    <i class="fas fa-th-large"></i>
+                    <span>Dashboard</span>
+                </a>
+                <a href="lost-found.html" class="nav-item">
+                    <i class="fas fa-box-open"></i>
+                    <span>Lost & Found</span>
+                </a>
+                <a href="complaints.html" class="nav-item active">
+                    <i class="fas fa-file-alt"></i>
+                    <span>Complaints</span>
+                </a>
+                <a href="volunteers.html" class="nav-item">
+                    <i class="fas fa-hand-holding-heart"></i>
+                    <span>Volunteers</span>
+                </a>
+                <a href="notifications.html" class="nav-item">
+                    <i class="fas fa-bell"></i>
+                    <span>Notifications</span>
+                </a>
+                <a href="index.html" class="nav-item">
+                    <i class="fas fa-sign-out-alt"></i>
+                    <span>Go Back to Login</span>
+                </a>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+
+        <!-- Header -->
+        <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 20px;">
+            <div
+                style="width: 30px; height: 30px; background: #e8f5e9; border-radius: 6px; display: flex; align-items: center; justify-content: center; color: #2e7d32;">
+                <i class="fas fa-briefcase"></i>
+            </div>
+            <h3 style="margin: 0; font-size: 1.1rem; color: #333;">Submit Complaint</h3>
+        </div>
+
+        <!-- Community Cleanup Section -->
+        <h4 style="font-size: 1.2rem; color: #333; margin-bottom: 15px;">Community Cleanup</h4>
+        <div class="hero-image-placeholder"
+            style="width: 100%; height: 200px; background-color: #e0e0e0; border-radius: 12px; margin-bottom: 15px; background-size: cover; background-position: center; background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Lawn_mowing_in_progress.jpg/800px-Lawn_mowing_in_progress.jpg');">
+        </div>
+        <div style="text-align: center; margin-bottom: 30px;">
+            <button
+                style="background: #fff; color: #333; border: 1px solid #ddd; padding: 8px 20px; border-radius: 6px; font-weight: 500; font-size: 0.85rem; cursor: default;">City
+                Park</button>
+        </div>
+
+        <!-- Two Column Grid for Workshops -->
+        <div class="events-grid">
+            <!-- Tech Workshop Card -->
+            <div class="event-card centered">
+                <div class="event-img"
+                    style="height: 150px; background-color: #e0e0e0; background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Tinkering_Studio_-_Exploratorium.jpg/640px-Tinkering_Studio_-_Exploratorium.jpg');">
+                </div>
+                <div class="event-details-centered" style="padding: 15px; text-align: center;">
+                    <h4 style="font-size: 1rem; color: #333; margin-bottom: 15px;">Tech Workshop</h4>
+                    <button class="register-btn" style="width: auto; display: inline-block;">Register</button>
+                </div>
+            </div>
+
+            <!-- Health Camp Card -->
+            <div class="event-card centered">
+                <div class="event-img"
+                    style="height: 150px; background-color: #e0e0e0; background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Medical_camp_in_India.jpg/640px-Medical_camp_in_India.jpg');">
+                </div>
+                <div class="event-details-centered" style="padding: 15px; text-align: center;">
+                    <h4 style="font-size: 1rem; color: #333; margin-bottom: 15px;">Health Camp</h4>
+                    <button class="register-btn" style="width: auto; display: inline-block;">Register</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.querySelector('.notification-link').addEventListener('click', (e) => {
+            // No preventDefault
+        });
+
+        // Register Button Logic
+        const registerBtns = document.querySelectorAll('.register-btn');
+        registerBtns.forEach(btn => {
+            btn.addEventListener('click', function () {
+                alert('Registration Successful');
+            });
+        });
+    </script>
+</body>
+
+</html>

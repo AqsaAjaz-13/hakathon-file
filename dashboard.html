@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saylani Campus Portal - Dashboard</title>
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+
+<body>
+
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Saylani_Welfare_International_Trust_Logo.jpg"
+                    alt="Saylani Logo" class="sidebar-logo">
+            </div>
+
+            <nav class="sidebar-nav">
+                <a href="dashboard.html" class="nav-item active">
+                    <i class="fas fa-th-large"></i>
+                    <span>Dashboard</span>
+                </a>
+                <a href="lost-found.html" class="nav-item">
+                    <i class="fas fa-box-open"></i>
+                    <span>Lost & Found</span>
+                </a>
+                <a href="complaints.html" class="nav-item">
+                    <i class="fas fa-file-alt"></i>
+                    <span>Complaints</span>
+                </a>
+                <a href="volunteers.html" class="nav-item">
+                    <i class="fas fa-hand-holding-heart"></i>
+                    <span>Volunteers</span>
+                </a>
+                <a href="notifications.html" class="nav-item">
+                    <i class="fas fa-bell"></i>
+                    <span>Notifications</span>
+                </a>
+                <a href="index.html" class="nav-item">
+                    <i class="fas fa-sign-out-alt"></i>
+                    <span>Go Back to Login</span>
+                </a>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="content-header">
+                <h2>Lost & Found Report</h2>
+            </header>
+
+            <!-- Stats Cards -->
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon blue">
+                        <i class="fas fa-clipboard-list"></i>
+                    </div>
+                    <div class="stat-info">
+                        <p>Total Reports</p>
+                        <h3>128</h3>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon red">
+                        <i class="fas fa-exclamation-circle"></i>
+                    </div>
+                    <div class="stat-info">
+                        <p>Active Complaints</p>
+                        <h3>5</h3>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon green">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <div class="stat-info">
+                        <p>Items Matched</p>
+                        <h3>12</h3>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon orange">
+                        <i class="fas fa-calendar-check"></i>
+                    </div>
+                    <div class="stat-info">
+                        <p>Events Registered</p>
+                        <h3>8</h3>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recent Activity & Actions -->
+            <div class="activity-section">
+                <h3>Recent Activity</h3>
+                <div class="activity-list">
+                    <div class="activity-item">
+                        <div class="activity-icon green-bg">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <div class="activity-details">
+                            <h4>Phone</h4>
+                        </div>
+                        <div class="activity-status">
+                            <span class="badge gray">Described</span>
+                            <span class="badge yellow">Pending</span>
+                        </div>
+                    </div>
+
+                    <div class="activity-item">
+                        <div class="activity-icon green-bg">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <div class="activity-details">
+                            <h4>Backpack</h4>
+                        </div>
+                        <div class="activity-status">
+                            <span class="badge gray">Resolved</span>
+                            <span class="badge green">Running</span>
+                        </div>
+                    </div>
+
+                    <div class="activity-item">
+                        <div class="activity-icon dark-bg">
+                            <i class="fas fa-wallet"></i>
+                        </div>
+                        <div class="activity-details">
+                            <h4>Wallet</h4>
+                        </div>
+                        <div class="activity-status">
+                            <span class="badge gray">Described</span>
+                            <span class="badge purple">Matching</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="action-buttons">
+                <button class="action-btn outline">
+                    <i class="fas fa-plus-square"></i>
+                    Report Lost Item
+                </button>
+                <button class="action-btn outline">
+                    <i class="fas fa-file-signature"></i>
+                    Submit Complaint
+                </button>
+                <button class="action-btn outline">
+                    <i class="fas fa-calendar-plus"></i>
+                    Register for Event
+                </button>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        // Simple script for notifications
+        document.querySelector('.notification-link').addEventListener('click', (e) => {
+            // No preventDefault to allow navigation
+        });
+    </script>
+</body>
+
+</html>
